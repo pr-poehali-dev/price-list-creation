@@ -68,7 +68,7 @@ export default function Index() {
         <div className="relative container mx-auto px-4 text-center">
           <div className="animate-fade-in">
             <h1 className="font-montserrat text-5xl md:text-6xl font-bold mb-6 tracking-tight">
-              АВТОСЕРВИС ПРЕМИУМ
+              ChecPoint СЕРВИС
             </h1>
             <p className="font-roboto text-xl md:text-2xl font-light max-w-2xl mx-auto mb-8 opacity-90">
               Профессиональный уход за вашим автомобилем
