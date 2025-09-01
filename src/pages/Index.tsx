@@ -64,19 +64,25 @@ export default function Index() {
     <div className="min-h-screen bg-gradient-to-br from-background via-background to-muted">
       {/* Hero Section */}
       <section className="relative overflow-hidden bg-gradient-to-r from-secondary via-secondary to-primary py-20 text-white">
-        <div className="absolute inset-0 bg-black/20"></div>
+        <div 
+          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+          style={{
+            backgroundImage: `url('/img/9e475bff-5faa-471f-874b-16cf4c372918.jpg')`
+          }}
+        ></div>
+        <div className="absolute inset-0 bg-black/60"></div>
         <div className="relative container mx-auto px-4 text-center">
           <div className="animate-fade-in">
-            <h1 className="font-montserrat text-5xl md:text-6xl font-bold mb-6 tracking-tight">
-              ChecPoint СЕРВИС
+            <h1 className="font-montserrat text-5xl md:text-6xl font-bold mb-6 tracking-tight drop-shadow-lg">
+              CheckPoint СЕРВИС
             </h1>
-            <p className="font-roboto text-xl md:text-2xl font-light max-w-2xl mx-auto mb-8 opacity-90">
+            <p className="font-roboto text-xl md:text-2xl font-light max-w-2xl mx-auto mb-8 opacity-90 drop-shadow-md">
               Профессиональный уход за вашим автомобилем
             </p>
             <div className="flex justify-center items-center gap-4">
-              <Icon name="Star" size={24} className="text-accent" />
-              <span className="font-roboto text-lg">Качество • Надежность • Опыт</span>
-              <Icon name="Star" size={24} className="text-accent" />
+              <Icon name="Star" size={24} className="text-accent drop-shadow-md" />
+              <span className="font-roboto text-lg drop-shadow-md">Качество • Надежность • Опыт</span>
+              <Icon name="Star" size={24} className="text-accent drop-shadow-md" />
             </div>
           </div>
         </div>
@@ -89,9 +95,35 @@ export default function Index() {
             <h2 className="font-montserrat text-4xl font-bold text-foreground mb-4">
               Прайс-лист на услуги
             </h2>
-            <p className="font-roboto text-lg text-muted-foreground max-w-2xl mx-auto">
+            <p className="font-roboto text-lg text-muted-foreground max-w-2xl mx-auto mb-8">
               Мы предлагаем полный спектр услуг по уходу за автомобилем с использованием современного оборудования и качественных материалов
             </p>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8 max-w-4xl mx-auto mb-12">
+              <div className="relative rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="/img/8c4ebf44-0c91-4f56-8e3c-9813ae212372.jpg" 
+                  alt="Профессиональная полировка автомобиля"
+                  className="w-full h-64 object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="font-montserrat font-semibold text-lg">Детейлинг премиум класса</h3>
+                  <p className="font-roboto text-sm opacity-90">Профессиональная полировка и уход</p>
+                </div>
+              </div>
+              <div className="relative rounded-lg overflow-hidden shadow-lg">
+                <img 
+                  src="/img/9900704b-7ecd-44a4-9e83-471b570da6f3.jpg" 
+                  alt="Команда профессионалов CheckPoint"
+                  className="w-full h-64 object-cover"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent"></div>
+                <div className="absolute bottom-4 left-4 text-white">
+                  <h3 className="font-montserrat font-semibold text-lg">Опытная команда мастеров</h3>
+                  <p className="font-roboto text-sm opacity-90">Более 10 лет на рынке автосервиса</p>
+                </div>
+              </div>
+            </div>
           </div>
 
           <div className="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-3 gap-6">
